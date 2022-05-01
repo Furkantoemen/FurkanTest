@@ -27,18 +27,18 @@ public class game {
 	
 		this.myCards = tempDeck;
 	
+	}
 	
+	public String toString() {
+		String cardListOutput = "";
+		int i = 0;
+		for(Card aCard : this.myCards) {
+			cardListOutput += "\n" + i + "-" + aCard.toString();
+			i++;
+		}
+		return cardListOutput;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}
 	
 	
 	
