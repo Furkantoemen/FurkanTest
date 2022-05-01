@@ -10,7 +10,38 @@ public class game {
 	private ArrayList<Card> myCards;
 	private ArrayList<Card> opCards;
 	
+	// BITTE AB HIE @ANDREA
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//BIS HIE DAMITS KEI PROBLEM GIT BI AU A DERE KLASS DRANNE IG DUE DE AB HIE
 	
 	
 }
