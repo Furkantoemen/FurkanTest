@@ -16,46 +16,54 @@ public class game {
 		ArrayList<Card>tempDeck = new ArrayList<Card>();
 		Random random = new Random();
 		int randomCardIndex = 0;
-		int originalSize = this.myCards.size();
+		int originalSize = this.deckList.size();
 		for(int i = 0; i < originalSize; i++) {
 			//generate random index ---> rand.nextInt((max - min) + 1) + min;
-			randomCardIndex = random.nextInt((this.myCards.size()-1 - 0) +1) + 0;
-			tempDeck.add(this.myCards.get(randomCardIndex));
+			randomCardIndex = random.nextInt((this.deckList.size()-1 - 0) +1) + 0;
+			tempDeck.add(this.deckList.get(randomCardIndex));
 			//remove from original deck
-			this.myCards.remove(randomCardIndex);
+			this.deckList.remove(randomCardIndex);
 		}
 	
-		this.myCards = tempDeck;
+		this.deckList = tempDeck;
 	
 	}
 	//Karten anzeigen
 	public String toString() {
 		String cardListOutput = "";
-		int i = 0;
-		for(Card aCard : this.myCards) {
-			cardListOutput += "\n" + i + "-" + aCard.toString();
-			i++;
+		for(Card aCard : this.deckList) {
+			cardListOutput += "\n" + aCard.toString();
 		}
 		return cardListOutput;
 	
 	}
 	
 	public void removeCard (int i) {
-		this.myCards.remove(i);
+		this.deckList.remove(i);
 	}
 	
 	public Card getCard (int i) {
-		return this.myCards.get(i);
+		return this.deckList.get(i);
 	}
 	
 	public void addCard(Card addCard) {
-		this.myCards.add(addCard);
+		this.deckList.add(addCard);
 	}
 	
+	//draws from the deck
+	public void draw(game comingFrom) {
+		this.deckList.add(getCard(0));
+		comingFrom.removeCard(0);
+	}
+	
+		
 	
 	
 	
 	//BIS HIE DAMITS KEI PROBLEM GIT BI AU A DERE KLASS DRANNE IG DUE DE AB HIE
 	
-	
+	public void createFullDeck() {
+	// TODO Auto-generated method stub
+	}
+
 }
