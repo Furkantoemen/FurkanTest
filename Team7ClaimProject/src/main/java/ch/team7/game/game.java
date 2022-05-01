@@ -28,7 +28,7 @@ public class game {
 		this.myCards = tempDeck;
 	
 	}
-	
+	//Karten anzeigen
 	public String toString() {
 		String cardListOutput = "";
 		int i = 0;
@@ -40,6 +40,17 @@ public class game {
 	
 	}
 	
+	public void removeCard (int i) {
+		this.myCards.remove(i);
+	}
+	
+	public Card getCard (int i) {
+		return this.myCards.get(i);
+	}
+	
+	public void addCard(Card addCard) {
+		this.myCards.add(addCard);
+	}
 	
 	
 	
