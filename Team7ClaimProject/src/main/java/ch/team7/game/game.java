@@ -1,7 +1,11 @@
 package ch.team7.game;
 
+import java.awt.Font;
 import java.util.ArrayList;
 import java.util.Random;
+
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 import ch.team7.model.Card;
 
@@ -46,5 +50,6 @@ public class game {
 	
 	//BIS HIE DAMITS KEI PROBLEM GIT BI AU A DERE KLASS DRANNE IG DUE DE AB HIE
 	
+		
 	
 }
