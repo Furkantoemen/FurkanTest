@@ -60,10 +60,6 @@ public class game {
 	
 	
 	
-	//BIS HIE DAMITS KEI PROBLEM GIT BI AU A DERE KLASS DRANNE IG DUE DE AB HIE
 	
-	public void createFullDeck() {
-	// TODO Auto-generated method stub
-	}
 
 }
