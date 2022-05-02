@@ -1,7 +1,7 @@
 package ch.team7.model;
 
 public class Card {
-	//@Author Furkan
+	//@Autor Robin
 	private Race race;
 	private int value;
 	
