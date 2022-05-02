@@ -9,6 +9,7 @@ public class Deck {
 	
 	
 	
+	
 	public Deck() {
 		deckOfCards = new ArrayList<Card>();
 		// Zuweisung Race / Deck Mischen
