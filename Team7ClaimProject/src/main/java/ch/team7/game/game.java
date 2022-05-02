@@ -85,6 +85,6 @@ public class game {
 	public InvalidRaceSubmissionException(String message, Card.race actual, Card.Race expected) {
 	this.actual = actual;
 	this.expected = expected;
-	}
+		}
 	}
 	
